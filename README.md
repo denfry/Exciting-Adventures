@@ -1,4 +1,7 @@
-Exciting Adventures on CurseForge
+Exciting Adventures 
+
+CurseForge page:
 https://www.curseforge.com/minecraft/modpacks/exc-adv
-on Modrinth
+
+Modrinth page:
 https://modrinth.com/modpack/exciting-adventures
