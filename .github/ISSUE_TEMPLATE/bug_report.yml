@@ -1,5 +1,5 @@
 name: Bug Report
-description: A report about an issue, crash or similar.
+description: A report about a problem, a crash, or something similar.
 title: "[Issue]: "
 labels: ["issue"]
 assignees:
@@ -21,7 +21,7 @@ body:
     id: packversion
     attributes:
       label: Pack Version
-      description: Put the pack version you are currently on here.
+      description: Enter your current pack version here.
       value: "Version: "
   - type: textarea
     id: repro
@@ -51,7 +51,7 @@ body:
     id: logs
     attributes:
       label: Relevant log output / crash report.
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no backticks are required.
       render: shell
   - type: textarea
     id: anythingelse
