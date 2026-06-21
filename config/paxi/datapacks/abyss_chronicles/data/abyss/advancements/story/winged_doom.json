@@ -1,0 +1,19 @@
+{
+  "parent": "abyss:story/the_edge",
+  "display": {
+    "icon": { "item": "minecraft:dragon_head" },
+    "title": { "text": "Крылатая погибель", "color": "light_purple" },
+    "description": { "text": "Сорвать власть Дракона Края — последнего союзника Бездны.", "color": "gray" },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "kill_dragon": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": { "entity": { "type": "minecraft:ender_dragon" } }
+    }
+  },
+  "rewards": { "function": "abyss:beat/dragon" }
+}

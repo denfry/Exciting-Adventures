@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/clock_display_time_0_a",
+  "textures": {
+    "layer0": "minecraft:item/clock_display_time_3"
+  }
+}

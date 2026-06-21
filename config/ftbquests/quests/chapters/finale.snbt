@@ -1,0 +1,372 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "finale"
+	group: ""
+	icon: "minecraft:nether_star"
+	id: "70A0000000000000"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["40A00000000000FF"]
+			description: [
+				"Лёд трещит. Тьма зовёт тебя по имени, которого ты не помнишь."
+				"Время пришло. Бездна почти проснулась — и только ты встанешь у неё на пути. Это первая битва из многих."
+			]
+			icon: "minecraft:heart_of_the_sea"
+			id: "70A0000000000001"
+			rewards: [{
+				id: "70A0000000000003"
+				type: "xp"
+				xp: 250
+			}]
+			tasks: [{
+				id: "70A0000000000002"
+				title: "Принять последний путь"
+				type: "checkmark"
+			}]
+			title: "Голос из глубин"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["70A0000000000001"]
+			description: [
+				"Сердце иссушённого исполина горит холодным светом."
+				"Добудь звезду Незера — без неё печать не вспыхнет."
+			]
+			icon: "minecraft:nether_star"
+			id: "70A0000000000004"
+			rewards: [{
+				id: "70A0000000000006"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "70A0000000000005"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			title: "Звезда мрака"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["70A0000000000001"]
+			description: [
+				"Тьма боится незеритовой стали."
+				"Откуй меч, что не дрогнет в последнем бою."
+			]
+			icon: "minecraft:netherite_sword"
+			id: "70A0000000000007"
+			rewards: [{
+				id: "70A0000000000009"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "70A0000000000008"
+				item: {
+					Count: 1
+					id: "minecraft:netherite_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Клинок без страха"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["70A0000000000001"]
+			description: [
+				"Лишь броня небес выдержит дыхание Бездны."
+				"Облачись в Божественную кирасу."
+			]
+			icon: "immersive_armors:divine_chestplate"
+			id: "70A000000000000A"
+			rewards: [{
+				id: "70A000000000000C"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "70A000000000000B"
+				item: {
+					Count: 1
+					id: "immersive_armors:divine_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Доспех богов"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["70A000000000000A"]
+			description: [
+				"Кираса — не всё. Собери остальные части небесного доспеха."
+				"Шлем, поножи и сапоги богов укроют тебя целиком."
+			]
+			icon: "immersive_armors:divine_helmet"
+			id: "70A000000000000D"
+			rewards: [{
+				count: 2
+				id: "70A0000000000011"
+				item: "minecraft:enchanted_golden_apple"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "70A000000000000E"
+					item: {
+						Count: 1
+						id: "immersive_armors:divine_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "70A000000000000F"
+					item: {
+						Count: 1
+						id: "immersive_armors:divine_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "70A0000000000010"
+					item: {
+						Count: 1
+						id: "immersive_armors:divine_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Полное облачение"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["70A0000000000007"]
+			description: [
+				"В последний бой не идут с пустыми руками."
+				"Запасись золотыми яблоками и тотемами — Бездна не прощает ошибок."
+			]
+			icon: "minecraft:enchanted_golden_apple"
+			id: "70A0000000000012"
+			rewards: [{
+				id: "70A0000000000015"
+				type: "xp"
+				xp: 400
+			}]
+			tasks: [
+				{
+					count: 3L
+					id: "70A0000000000013"
+					item: "minecraft:enchanted_golden_apple"
+					type: "item"
+				}
+				{
+					id: "70A0000000000014"
+					item: "minecraft:totem_of_undying"
+					type: "item"
+				}
+			]
+			title: "Эликсиры конца"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["70A0000000000004"]
+			description: [
+				"Прежде чем дойти до неё, ты пройдёшь сквозь её свору."
+				"Изруби демонов и адских псов, что охраняют врата Бездны."
+			]
+			icon: "minecraft:wither_skeleton_skull"
+			id: "70A0000000000016"
+			rewards: [{
+				id: "70A0000000000019"
+				type: "xp"
+				xp: 500
+			}]
+			tasks: [
+				{
+					entity: "bewitchment:demon"
+					id: "70A0000000000017"
+					type: "kill"
+					value: 5L
+				}
+				{
+					entity: "bewitchment:hellhound"
+					id: "70A0000000000018"
+					type: "kill"
+					value: 5L
+				}
+			]
+			title: "Слуги тьмы"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"70A0000000000004"
+				"70A0000000000012"
+				"70A000000000000D"
+			]
+			description: [
+				"Звезда, клинок и доспех богов — три ключа к спасению мира."
+				"Собери всё воедино. Ты готов."
+			]
+			icon: "minecraft:nether_star"
+			id: "70A000000000001A"
+			rewards: [{
+				id: "70A000000000001C"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			tasks: [{
+				id: "70A000000000001B"
+				title: "Собрать силу для печати"
+				type: "checkmark"
+			}]
+			title: "Сила для печати"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"70A000000000001A"
+				"70A0000000000016"
+			]
+			description: [
+				"Кровь, звезда и древние слова. Круг печати начертан на льду."
+				"Соверши ритуал — и Бездна явит свою повелительницу."
+			]
+			icon: "minecraft:end_crystal"
+			id: "70A000000000001D"
+			rewards: [{
+				id: "70A000000000001F"
+				item: "minecraft:totem_of_undying"
+				type: "item"
+			}]
+			tasks: [{
+				id: "70A000000000001E"
+				title: "Совершить ритуал призыва"
+				type: "checkmark"
+			}]
+			title: "Ритуал пробуждения"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["70A000000000001D"]
+			description: [
+				"Из мрака восстаёт Лилит — голос, что звал тебя всё это время."
+				"Победи её — или сгинь во льдах. Но даже её смерть не закроет Бездну навсегда."
+			]
+			icon: "minecraft:wither_rose"
+			id: "70A0000000000020"
+			rewards: [{
+				count: 3
+				id: "70A0000000000022"
+				item: "minecraft:enchanted_golden_apple"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "bewitchment:lilith"
+				id: "70A0000000000021"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Повелительница Бездны"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["70A0000000000020"]
+			description: [
+				"Лилит повержена, но Бездна всё ещё дышит сквозь разлом."
+				"Вонзи звезду в сердце круга и захлопни первый разлом. Это удержит Бездну — на время."
+			]
+			icon: "minecraft:nether_star"
+			id: "70A0000000000023"
+			rewards: [{
+				id: "70A0000000000025"
+				type: "xp"
+				xp: 1000
+			}]
+			tasks: [{
+				id: "70A0000000000024"
+				title: "Запечатать Бездну"
+				type: "checkmark"
+			}]
+			title: "Запечатать тьму"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["70A0000000000023"]
+			description: [
+				"Лёд стихает, первый разлом закрыт. Но под печатью всё ещё бьётся древнее сердце — терпеливо, медленно."
+				"Ты выиграл первую битву, но не войну. Расправь крылья и переведи дух: Бездна лишь приоткрыла глаз. Часть II ждёт впереди."
+			]
+			icon: "minecraft:elytra"
+			id: "70A00000000000FF"
+			rewards: [
+				{
+					id: "70A0000000000027"
+					item: {
+						Count: 1
+						id: "minecraft:elytra"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "70A0000000000028"
+					item: "minecraft:totem_of_undying"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "70A0000000000029"
+					item: "minecraft:enchanted_golden_apple"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "70A000000000002A"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "70A0000000000026"
+				title: "Встретить рассвет над спасённой землёй"
+				type: "checkmark"
+			}]
+			title: "Первая печать легла"
+			x: 10.5d
+			y: 0.0d
+		}
+	]
+	title: "Часть I — Первая Печать"
+}

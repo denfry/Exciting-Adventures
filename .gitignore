@@ -1,0 +1,75 @@
+# ============================================================================
+#  .gitignore — Minecraft instance "Exciting Adventures" (PrismLauncher)
+#
+#  Цель: версионировать ТОЛЬКО редактируемый вручную контент — конфиги,
+#  скрипты, датапаки, квесты, сюжетные материалы. НЕ коммитим бинарники
+#  модов, кэши, миры, логи и тяжёлые арт-ассеты, чтобы репозиторий оставался
+#  лёгким (нужно для облачной сессии Claude / ultraplan).
+# ============================================================================
+
+# --- Моды и бинарники загрузчика (сотни МБ, скачиваются заново) ---
+/mods/
+/coremods/
+/.fabric/
+/.mixin.out/
+/BTLib.dll
+
+# --- Миры и данные игрока ---
+/saves/
+/usercache.json
+/usernamecache.json
+/server-resource-packs/
+
+# --- Ресурс/шейдер/текстур-паки (крупные бинарники) ---
+/resourcepacks/
+/shaderpacks/
+/texturepacks/
+/polymer-resourcepack.zip
+
+# --- Логи, краши, кэши ---
+/logs/
+/crash-reports/
+/.cache/
+/modernfix/
+/local/
+/data/
+
+# --- Карты (Xaero) ---
+/xaero/
+/XaeroWorldMap/
+/XaeroWaypoints_BACKUP240807/
+
+# --- Скриншоты и временные картинки ---
+/screenshots/
+/picture/
+/icon.png
+clipboard-*.png
+
+# --- Прочее генерируемое ---
+/irisUpdateInfo.json
+/patchouli_data.json
+/patchouli_books/
+/moddata/
+/schematics/
+/observable_announce
+
+# --- Тяжёлый арт FancyMenu: оставляем .fm-разметку, выкидываем картинки ---
+/config/fancymenu/slideshows/
+/config/fancymenu/**/*.png
+/config/fancymenu/**/*.jpg
+/config/fancymenu/**/*.jpeg
+/config/fancymenu/**/*.gif
+/config/fancymenu/**/*.ogg
+/config/fancymenu/**/*.wav
+/config/fancymenu/**/*.mp3
+/config/fancymenu/**/*.mp4
+
+# --- Бинарные типы где угодно (страховка) ---
+*.jar
+*.dll
+*.class
+*.mca
+*.mcr
+
+# --- Claude Code локальные настройки машины ---
+.claude/settings.local.json

@@ -1,0 +1,7 @@
+type = last_world
+
+last_world {
+  is_server = false
+  world = C:/Users/dabin/AppData/Roaming/PrismLauncher/instances/Exciting Adventures/minecraft/saves/New World (1)
+}
+

@@ -1,0 +1,15 @@
+{
+  "display": {
+    "icon": { "item": "minecraft:nether_star" },
+    "title": { "text": "Хроники Бездны", "color": "dark_purple", "bold": true },
+    "description": { "text": "Летопись пробуждения и Бездны", "color": "dark_aqua" },
+    "background": "minecraft:textures/block/sculk.png",
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "start": { "trigger": "minecraft:impossible" }
+  }
+}

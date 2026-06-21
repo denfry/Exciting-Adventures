@@ -1,0 +1,13 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/clock_display_villager_off"
+  },
+	"display": {
+		"fixed": {
+			"rotation": [0, 180, 0],
+			"translation": [-6.375, 0, -1.5],
+			"scale": [0.1875, 0.1875, 1]
+		}
+	}
+}

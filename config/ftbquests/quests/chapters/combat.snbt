@@ -1,0 +1,378 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "combat"
+	group: ""
+	icon: {
+		Count: 1
+		id: "simplyswords:arcanethyst"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "30A0000000000000"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["20A00000000000FF"]
+			description: [
+				"Камень и железо тебя больше не спасут. Тьма стала злее."
+				"Спустись глубже и добудь алмазы — настоящий клинок куётся из них."
+			]
+			id: "30A0000000000001"
+			rewards: [{
+				id: "30A0000000000003"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			tasks: [{
+				count: 6L
+				id: "30A0000000000002"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			title: "Алмазная сталь"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["30A0000000000001"]
+			description: [
+				"Меч в руке, броня на плечах. Так встречают ночь те, кто хочет дожить до рассвета."
+				"Выкуй алмазный меч и нагрудник."
+			]
+			id: "30A0000000000004"
+			rewards: [{
+				count: 8
+				id: "30A0000000000007"
+				item: "minecraft:cooked_beef"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "30A0000000000005"
+					item: {
+						Count: 1
+						id: "minecraft:diamond_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "30A0000000000006"
+					item: {
+						Count: 1
+						id: "minecraft:diamond_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Клинок и латы"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["30A0000000000004"]
+			description: [
+				"Стены из книг гудят древним знанием. Сила оружия — не только в металле."
+				"Собери стол зачарования и окружи его книжными полками."
+			]
+			id: "30A0000000000008"
+			rewards: [{
+				id: "30A000000000000B"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [
+				{
+					id: "30A0000000000009"
+					item: "minecraft:enchanting_table"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "30A000000000000A"
+					item: "minecraft:bookshelf"
+					type: "item"
+				}
+			]
+			title: "Шёпот рун"
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["30A0000000000008"]
+			description: [
+				"В темноте кишат восьмилапые. Их яд останавливает сердце."
+				"Прореди пауков, прежде чем они прорядят тебя."
+			]
+			id: "30A000000000000C"
+			rewards: [{
+				id: "30A000000000000E"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [{
+				entity: "minecraft:spider"
+				id: "30A000000000000D"
+				type: "kill"
+				value: 12L
+			}]
+			title: "Чистильщик пещер"
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["30A000000000000C"]
+			description: [
+				"Стрелы из тьмы находят тебя первыми. Заставь скелетов замолчать."
+				"Уничтожь скелетов в подземельях."
+			]
+			id: "30A000000000000F"
+			rewards: [{
+				count: 6
+				id: "30A0000000000011"
+				item: "minecraft:bread"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "minecraft:skeleton"
+				id: "30A0000000000010"
+				type: "kill"
+				value: 12L
+			}]
+			title: "Костяной хор"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["30A000000000000F"]
+			description: [
+				"Шипение за спиной — последнее, что слышат беспечные."
+				"Сразись с криперами и не дай им подобраться вплотную."
+			]
+			id: "30A0000000000012"
+			rewards: [{
+				id: "30A0000000000014"
+				type: "xp"
+				xp: 200
+			}]
+			tasks: [{
+				entity: "minecraft:creeper"
+				id: "30A0000000000013"
+				type: "kill"
+				value: 8L
+			}]
+			title: "Тихая смерть"
+			x: 7.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["30A0000000000012"]
+			description: [
+				"Грабители-пилладжеры идут отрядами, и арбалеты их беспощадны."
+				"Разбей их патруль и забери трофеи."
+			]
+			id: "30A0000000000015"
+			rewards: [{
+				id: "30A0000000000017"
+				type: "xp_levels"
+				xp_levels: 4
+			}]
+			tasks: [{
+				entity: "minecraft:pillager"
+				id: "30A0000000000016"
+				type: "kill"
+				value: 10L
+			}]
+			title: "Разбойничий тракт"
+			x: 9.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["30A0000000000004"]
+			description: [
+				"Better Combat учит держать оружие в обеих руках. Удар, уклон, добивание."
+				"Освой парное оружие в бою."
+			]
+			id: "30A0000000000018"
+			rewards: [{
+				id: "30A000000000001A"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [{
+				id: "30A0000000000019"
+				title: "Сразись, держа оружие в обеих руках (двойное оружие Better Combat)"
+				type: "checkmark"
+			}]
+			title: "Две руки — два клинка"
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["30A0000000000018"]
+			description: [
+				"В глубинах поют кристаллы. Аркантист — самоцвет, в котором спит чужая древняя сила."
+				"Добудь аркантист: на нём куются рунические клинки SimplySwords."
+			]
+			id: "30A000000000001B"
+			rewards: [{
+				id: "30A000000000001D"
+				type: "xp_levels"
+				xp_levels: 6
+			}]
+			tasks: [{
+				id: "30A000000000001C"
+				item: {
+					Count: 1
+					id: "simplyswords:arcanethyst"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Аркантист"
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["30A000000000001B"]
+			description: [
+				"Кости павших становятся бронёй живых. Immersive Armors даёт второй шанс."
+				"Скуй и надень костяной нагрудник."
+			]
+			id: "30A000000000001E"
+			rewards: [{
+				id: "30A0000000000020"
+				type: "xp"
+				xp: 250
+			}]
+			tasks: [{
+				id: "30A000000000001F"
+				item: {
+					Count: 1
+					id: "immersive_armors:bone_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Доспех из праха"
+			x: 7.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["30A000000000001E"]
+			description: [
+				"Говорят, эта броня хранила древних воинов от самой Бездны."
+				"Собери божественный комплект Immersive Armors."
+			]
+			id: "30A0000000000021"
+			rewards: [{
+				id: "30A0000000000024"
+				type: "xp_levels"
+				xp_levels: 8
+			}]
+			tasks: [
+				{
+					id: "30A0000000000022"
+					item: {
+						Count: 1
+						id: "immersive_armors:divine_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "30A0000000000023"
+					item: {
+						Count: 1
+						id: "immersive_armors:divine_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Божественные латы"
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["30A000000000001E"]
+			description: [
+				"Стекло, огонь и редкие травы. Глоток в нужный миг отделяет жизнь от смерти."
+				"Свари зелья, что спасут тебя в бою."
+			]
+			id: "30A0000000000025"
+			rewards: [{
+				count: 2
+				id: "30A0000000000028"
+				item: "minecraft:golden_apple"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 4L
+					id: "30A0000000000026"
+					item: "minecraft:blaze_powder"
+					type: "item"
+				}
+				{
+					id: "30A0000000000027"
+					title: "Свари полезные боевые зелья (силы, исцеления или огнестойкости)"
+					type: "checkmark"
+				}
+			]
+			title: "Зелья выживания"
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"30A0000000000015"
+				"30A0000000000021"
+				"30A0000000000025"
+			]
+			description: [
+				"Клинок поёт, латы держат удар, в жилах — стынущая решимость."
+				"Ты больше не жертва. Ты — охотник. Бездна услышит твои шаги."
+				"Докажи, что готов спуститься к её тварям."
+			]
+			id: "30A00000000000FF"
+			rewards: [
+				{
+					id: "30A000000000002A"
+					type: "xp_levels"
+					xp_levels: 12
+				}
+				{
+					id: "30A000000000002B"
+					item: "minecraft:enchanted_golden_apple"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "30A0000000000029"
+				title: "Стать закалённым воином: оружие, броня и зелья готовы к охоте"
+				type: "checkmark"
+			}]
+			title: "Закалённый в бою"
+			x: 11.0d
+			y: 0.0d
+		}
+	]
+	title: "Глава III — Путь воина"
+}

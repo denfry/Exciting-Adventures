@@ -1,0 +1,458 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "abyss_signs"
+	group: ""
+	icon: "minecraft:heart_of_the_sea"
+	id: "0672353E319EE94F"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Хроники Бездны. Часть I — Пробуждение."
+				"Ты очнулся на чужом берегу без памяти, с письмом и книгой в руке. Море не помнит твоего имени. Бездна — помнит."
+				"Открой выданный кодекс «Хроники Бездны». Всё, что здесь начнётся, — лишь первая глава долгой борьбы."
+			]
+			icon: "minecraft:heart_of_the_sea"
+			id: "7A51000000000001"
+			rewards: [{
+				id: "7A54000000000001"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "hexagon"
+			tasks: [{
+				advancement: "abyss:story/prologue"
+				criterion: ""
+				id: "7A52000000000001"
+				type: "advancement"
+			}]
+			title: "Пролог: Холодный берег"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A51000000000001"]
+			description: [
+				"Раскрой кодекс из инвентаря и прочти первые страницы."
+				"Семь испытаний отделяют тебя от Неё. Но и за ними борьба не кончится — запомни это."
+			]
+			icon: "minecraft:writable_book"
+			id: "7A51000000000002"
+			rewards: [{
+				id: "7A54000000000002"
+				type: "xp"
+				xp: 30
+			}]
+			tasks: [{
+				id: "7A52000000000002"
+				title: "Прочесть кодекс «Хроники Бездны»"
+				type: "checkmark"
+			}]
+			title: "Слова на полях"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7A51000000000001"]
+			description: [
+				"Подойди к Отшельнику берега вплотную (или присядь рядом) и выслушай его."
+				"Он вытащил тебя из прибоя — и единственный здесь, кто ещё помнит, каким был мир до Бездны."
+			]
+			icon: "minecraft:campfire"
+			id: "7A51000000000003"
+			rewards: [{
+				count: 8
+				id: "7A54000000000003"
+				item: "minecraft:torch"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "abyss:story/met_hermit"
+				criterion: ""
+				id: "7A52000000000003"
+				type: "advancement"
+			}]
+			title: "Отшельник берега"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7A51000000000001"]
+			description: [
+				"Бездна прорастает в камне чёрным мхом. Добудь скалк — её первый след на поверхности."
+			]
+			icon: "minecraft:sculk"
+			id: "7A51000000000004"
+			rewards: [{
+				id: "7A54000000000004"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [{
+				count: 4L
+				id: "7A52000000000004"
+				item: "minecraft:sculk"
+				type: "item"
+			}]
+			title: "Эхо под камнем"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A51000000000003"]
+			description: [
+				"Отшельник делится последним. Собери припасы на первую ночь — Бездна не любит сытых и согретых."
+				"Необязательная тропа."
+			]
+			icon: "minecraft:cooked_beef"
+			id: "7A51000000000005"
+			optional: true
+			rewards: [{
+				id: "7A54000000000005"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				count: 6L
+				id: "7A52000000000005"
+				item: "minecraft:cooked_beef"
+				type: "item"
+			}]
+			title: "Дары берега"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7A51000000000001"]
+			description: [
+				"Шагни в Незер — там Бездна вьёт свои огненные корни."
+				"Здесь добывается то, без чего не вспыхнет даже первая печать."
+			]
+			icon: "minecraft:obsidian"
+			id: "7A51000000000006"
+			rewards: [{
+				id: "7A54000000000006"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				advancement: "abyss:story/into_the_dark"
+				criterion: ""
+				id: "7A52000000000006"
+				type: "advancement"
+			}]
+			title: "Врата Нижнего мира"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7A51000000000006"]
+			description: [
+				"Вырви у Незера его жар. Стержни ифритов горят даже во льдах берега."
+			]
+			icon: "minecraft:blaze_rod"
+			id: "7A51000000000007"
+			rewards: [{
+				id: "7A54000000000007"
+				type: "xp"
+				xp: 80
+			}]
+			tasks: [{
+				count: 4L
+				id: "7A52000000000007"
+				item: "minecraft:blaze_rod"
+				type: "item"
+			}]
+			title: "Огненные корни"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7A51000000000004"]
+			description: [
+				"Спустись в Глубокую Тьму — туда, где Бездна ближе всего к поверхности."
+				"Войди в биом Deep Dark. Голос отзовётся, и мир отметит твой шаг."
+			]
+			icon: "minecraft:sculk_shrieker"
+			id: "7A51000000000008"
+			rewards: [{
+				id: "7A54000000000008"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				advancement: "abyss:story/descent"
+				criterion: ""
+				id: "7A52000000000008"
+				type: "advancement"
+			}]
+			title: "Нисхождение"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A51000000000008"]
+			description: [
+				"Скрытое испытание для дерзких: услышать стук сердца Хранителя глубин — и пережить встречу."
+				"Немногие возвращались."
+			]
+			hide_until_deps_visible: true
+			icon: "minecraft:soul_lantern"
+			id: "7A51000000000009"
+			optional: true
+			rewards: [{
+				count: 2
+				id: "7A54000000000009"
+				item: "minecraft:netherite_scrap"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "abyss:story/warden"
+				criterion: ""
+				id: "7A52000000000009"
+				type: "advancement"
+			}]
+			title: "Сердце Хранителя"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7A51000000000007"]
+			description: [
+				"Призови и сокруши Иссушителя. Из его смерти родится звезда — первый ключ к печати Бездны."
+			]
+			icon: "minecraft:wither_skeleton_skull"
+			id: "7A5100000000000A"
+			rewards: [{
+				id: "7A5400000000000A"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				advancement: "abyss:story/storm"
+				criterion: ""
+				id: "7A5200000000000A"
+				type: "advancement"
+			}]
+			title: "Звезда мрака"
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7A51000000000008"]
+			description: [
+				"Добудь осколок эха из Древнего города. С ним Бездна услышит тебя — и запомнит твоё имя."
+			]
+			icon: "minecraft:echo_shard"
+			id: "7A5100000000000B"
+			rewards: [{
+				id: "7A5400000000000B"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			tasks: [{
+				advancement: "abyss:story/the_whisper"
+				criterion: ""
+				id: "7A5200000000000B"
+				type: "advancement"
+			}]
+			title: "Зов глубин"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A51000000000008"]
+			description: [
+				"Сердце скалка слышит каждую смерть. Вырежи катализатор из Древнего города — он ещё пригодится."
+			]
+			icon: "minecraft:sculk_catalyst"
+			id: "7A5100000000000C"
+			rewards: [{
+				id: "7A5400000000000C"
+				type: "xp"
+				xp: 90
+			}]
+			tasks: [{
+				id: "7A5200000000000C"
+				item: "minecraft:sculk_catalyst"
+				type: "item"
+			}]
+			title: "Слушающий камень"
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7A5100000000000B"]
+			description: [
+				"Собери компас возвращения из осколков эха. Он указывает туда, где ты пал, — а Бездна любит такие места."
+			]
+			icon: "minecraft:recovery_compass"
+			id: "7A5100000000000D"
+			rewards: [{
+				id: "7A5400000000000D"
+				type: "xp"
+				xp: 120
+			}]
+			tasks: [{
+				id: "7A5200000000000D"
+				item: "minecraft:recovery_compass"
+				type: "item"
+			}]
+			title: "Голос, что помнит имя"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A5100000000000B"]
+			description: [
+				"Чем больше осколков эха ты несёшь, тем громче зовёт глубина. Собери ещё три."
+				"Необязательно — но Бездна ценит упорство."
+			]
+			icon: "minecraft:sculk_sensor"
+			id: "7A5100000000000E"
+			optional: true
+			rewards: [{
+				id: "7A5400000000000E"
+				type: "xp"
+				xp: 80
+			}]
+			tasks: [{
+				count: 3L
+				id: "7A5200000000000E"
+				item: "minecraft:echo_shard"
+				type: "item"
+			}]
+			title: "Метки Бездны"
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7A5100000000000B"]
+			description: [
+				"Достигни Края — пустоты между звёздами, что старше самой Бездны."
+			]
+			icon: "minecraft:ender_eye"
+			id: "7A5100000000000F"
+			rewards: [{
+				id: "7A5400000000000F"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [{
+				advancement: "abyss:story/the_edge"
+				criterion: ""
+				id: "7A5200000000000F"
+				type: "advancement"
+			}]
+			title: "Край мира"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7A5100000000000F"]
+			description: [
+				"В пустоте Края тебя встретит Вестница Бездны. Выслушай её и сделай первый выбор: запечатать или принять."
+				"Этот выбор ещё не окончателен — борьба только начинается."
+			]
+			icon: "minecraft:wither_rose"
+			id: "7A51000000000010"
+			rewards: [{
+				id: "7A54000000000010"
+				type: "xp_levels"
+				xp_levels: 4
+			}]
+			tasks: [{
+				advancement: "abyss:story/met_herald"
+				criterion: ""
+				id: "7A52000000000010"
+				type: "advancement"
+			}]
+			title: "Вестница Бездны"
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7A5100000000000F"]
+			description: [
+				"Сорви власть Дракона Края — древнего стража, которого Бездна обратила себе на службу."
+			]
+			icon: "minecraft:dragon_head"
+			id: "7A51000000000011"
+			rewards: [{
+				id: "7A54000000000011"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				advancement: "abyss:story/winged_doom"
+				criterion: ""
+				id: "7A52000000000011"
+				type: "advancement"
+			}]
+			title: "Крылатая погибель"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A5100000000000A", "7A51000000000011"]
+			description: [
+				"Вырви три ключа, начерти круг на льду и низвергни Лилит — голос, что звал тебя всё это время."
+				"Когда это свершится, на разлом ляжет первая печать. Последний рывок описан в главе «Часть I — Первая Печать»."
+				"Но печать — не победа. Это лишь первый камень в стене против тьмы."
+			]
+			icon: "minecraft:nether_star"
+			id: "7A51000000000012"
+			rewards: [
+				{
+					count: 2
+					id: "7A54000000000012"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+				{
+					id: "7A55000000000012"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				advancement: "abyss:story/the_seal"
+				criterion: ""
+				id: "7A52000000000012"
+				type: "advancement"
+			}]
+			title: "Первая печать"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A51000000000012"]
+			description: [
+				"Лёд стихает. Голос умолкает. Но под печатью всё ещё бьётся древнее сердце — медленно, терпеливо."
+				"Ты запечатал первый разлом. Их больше. Бездна лишь приоткрыла глаз и снова уснула, запоминая твоё лицо."
+				"Часть II ждёт. Расправь крылья, переведи дух — и готовься: настоящая война впереди."
+			]
+			icon: "minecraft:end_crystal"
+			id: "7A51000000000013"
+			rewards: [{
+				count: 16
+				id: "7A54000000000013"
+				item: "minecraft:experience_bottle"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7A52000000000013"
+				title: "Принять: борьба с Бездной только началась"
+				type: "checkmark"
+			}]
+			title: "…это только начало"
+			x: 10.5d
+			y: 0.0d
+		}
+	]
+	title: "Хроники — Пролог: Пробуждение"
+}

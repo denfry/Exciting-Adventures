@@ -1,0 +1,15 @@
+{
+  "parent": "abyss:story/root",
+  "display": {
+    "icon": { "item": "minecraft:oak_log" },
+    "title": { "text": "Пролог — Холодный берег", "color": "dark_aqua" },
+    "description": { "text": "Ты очнулся на чужом берегу без памяти. Голос зовёт из глубин.", "color": "gray" },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "start": { "trigger": "minecraft:impossible" }
+  }
+}

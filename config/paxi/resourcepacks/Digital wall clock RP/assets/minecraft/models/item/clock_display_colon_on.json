@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/clock_display_colon_off",
+  "textures": {
+    "layer0": "minecraft:item/clock_display_colon_on"
+  }
+}

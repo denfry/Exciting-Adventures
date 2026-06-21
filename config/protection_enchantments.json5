@@ -1,0 +1,110 @@
+{
+	"fireProtectionEnchantment": {
+		/* Items that can be enchanted
+		   Allowed Values: ALL_ITEMS, ITEMS_AND_COMPATIBLE_BLOCKS, ITEMS_ONLY
+		*/
+		"enchantableItems": "ITEMS_AND_COMPATIBLE_BLOCKS",
+		// Minimum experience cost required to apply the enchantment
+		"minimumPower": 30,
+		/* Enchantment Rarity (likelihood of obtaining the enchantment)
+		   Allowed Values: COMMON, UNCOMMON, RARE, VERY_RARE
+		*/
+		"rarity": "VERY_RARE",
+		// Whether to make it a treasure enchantment
+		"treasureEnchantment": false,
+		// Available through villager trading?
+		"tradeable": true,
+		// Should items glow when submerged in lava?
+		"glow": false
+	},
+	"cactusProtectionEnchantment": {
+		/* Items that can be enchanted
+		   Allowed Values: ALL_ITEMS, ITEMS_AND_COMPATIBLE_BLOCKS, ITEMS_ONLY
+		*/
+		"enchantableItems": "ITEMS_AND_COMPATIBLE_BLOCKS",
+		// Minimum experience cost required to apply the enchantment
+		"minimumPower": 30,
+		/* Enchantment Rarity (likelihood of obtaining the enchantment)
+		   Allowed Values: COMMON, UNCOMMON, RARE, VERY_RARE
+		*/
+		"rarity": "VERY_RARE",
+		// Whether to make it a treasure enchantment
+		"treasureEnchantment": false,
+		// Available through villager trading?
+		"tradeable": true
+	},
+	"blastProtectionEnchantment": {
+		/* Items that can be enchanted
+		   Allowed Values: ALL_ITEMS, ITEMS_AND_COMPATIBLE_BLOCKS, ITEMS_ONLY
+		*/
+		"enchantableItems": "ITEMS_AND_COMPATIBLE_BLOCKS",
+		// Minimum experience cost required to apply the enchantment
+		"minimumPower": 30,
+		/* Enchantment Rarity (likelihood of obtaining the enchantment)
+		   Allowed Values: COMMON, UNCOMMON, RARE, VERY_RARE
+		*/
+		"rarity": "VERY_RARE",
+		// Whether to make it a treasure enchantment
+		"treasureEnchantment": false,
+		// Available through villager trading?
+		"tradeable": true
+	},
+	"voidProtectionEnchantment": {
+		/* Items that can be enchanted
+		   Allowed Values: ALL_ITEMS, ITEMS_AND_COMPATIBLE_BLOCKS, ITEMS_ONLY
+		*/
+		"enchantableItems": "ITEMS_AND_COMPATIBLE_BLOCKS",
+		// Minimum experience cost required to apply the enchantment
+		"minimumPower": 30,
+		/* Enchantment Rarity (likelihood of obtaining the enchantment)
+		   Allowed Values: COMMON, UNCOMMON, RARE, VERY_RARE
+		*/
+		"rarity": "VERY_RARE",
+		// Whether to make it a treasure enchantment
+		"treasureEnchantment": false,
+		// Available through villager trading?
+		"tradeable": true,
+		// Should the item glow when it falls into the void?
+		"glow": true,
+		/* Height to protect from the void
+		   Allowed Values: HEIGHT_WHERE_ENTITY_TAKES_DAMAGE, MIN_BUILD_HEIGHT
+		*/
+		"protectionHeight": "HEIGHT_WHERE_ENTITY_TAKES_DAMAGE",
+		// Height after protection from the void (0 is the minimum build height)
+		"protectedHeight": 1
+	},
+	"expireProtectionEnchantment": {
+		/* Items that can be enchanted
+		   Allowed Values: ALL_ITEMS, ITEMS_AND_COMPATIBLE_BLOCKS, ITEMS_ONLY
+		*/
+		"enchantableItems": "ITEMS_AND_COMPATIBLE_BLOCKS",
+		// Minimum experience cost required to apply the enchantment
+		"minimumPower": 30,
+		/* Enchantment Rarity (likelihood of obtaining the enchantment)
+		   Allowed Values: COMMON, UNCOMMON, RARE, VERY_RARE
+		*/
+		"rarity": "VERY_RARE",
+		// Whether to make it a treasure enchantment
+		"treasureEnchantment": false,
+		// Available through villager trading?
+		"tradeable": true
+	},
+	"inventoryHoldingEnchantment": {
+		/* Items that can be enchanted
+		   Allowed Values: ALL_ITEMS, ITEMS_AND_COMPATIBLE_BLOCKS, ITEMS_ONLY
+		*/
+		"enchantableItems": "ITEMS_AND_COMPATIBLE_BLOCKS",
+		// Minimum experience cost required to apply the enchantment
+		"minimumPower": 30,
+		/* Enchantment Rarity (likelihood of obtaining the enchantment)
+		   Allowed Values: COMMON, UNCOMMON, RARE, VERY_RARE
+		*/
+		"rarity": "VERY_RARE",
+		// Whether to make it a treasure enchantment
+		"treasureEnchantment": true,
+		// Available through villager trading?
+		"tradeable": true,
+		// Whether to disable the effect of Curse of Vanishing if Inventory Holding is applied
+		"disableVanishingCurse": true
+	}
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/clock_display_weather_clear_sun_noon",
+  "textures": {
+    "layer0": "minecraft:item/clock_display_weather_off"
+  }
+}

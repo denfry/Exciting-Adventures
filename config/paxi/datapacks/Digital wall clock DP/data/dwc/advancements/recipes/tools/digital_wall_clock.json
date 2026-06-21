@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "translate": "",
+            "color": "gold"
+        },
+        "description": {
+            "translate": "",
+            "color": "dark_purple"
+        },
+        "icon": {
+            "item": "minecraft:knowledge_book",
+            "nbt": "{CustomModelData:91}"
+        },
+        "announce_to_chat": false
+    },
+  "criteria": {
+    "Unlocked": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "dwc:digital_wall_clock"
+      }
+    }
+  }
+}

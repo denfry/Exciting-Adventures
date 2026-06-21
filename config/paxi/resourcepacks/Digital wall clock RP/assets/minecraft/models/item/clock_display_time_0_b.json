@@ -1,0 +1,13 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/clock_display_time_0"
+  },
+	"display": {
+		"fixed": {
+			"rotation": [0, 180, 0],
+			"translation": [2.625, 4.875, -1.5],
+			"scale": [0.375, 0.375, 1]
+		}
+	}
+}

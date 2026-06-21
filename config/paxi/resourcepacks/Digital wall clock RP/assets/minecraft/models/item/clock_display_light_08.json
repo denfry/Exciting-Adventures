@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/clock_display_light_00",
+  "textures": {
+    "b": "minecraft:item/clock_display_light_8"
+  }
+}

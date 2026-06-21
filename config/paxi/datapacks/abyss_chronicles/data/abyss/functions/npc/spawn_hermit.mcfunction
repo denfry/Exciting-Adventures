@@ -1,0 +1,2 @@
+# Призвать Отшельника берега рядом с игроком (один раз)
+execute at @s unless entity @e[tag=npc_hermit] run summon minecraft:villager ~ ~ ~1 {NoAI:1b,NoGravity:1b,Silent:1b,Invulnerable:1b,PersistenceRequired:1b,CustomNameVisible:1b,CustomName:'{"text":"Отшельник берега","color":"dark_aqua"}',VillagerData:{profession:"minecraft:librarian",level:3,type:"minecraft:taiga"},Offers:{Recipes:[]},Tags:["abyss_npc","npc_hermit"]}

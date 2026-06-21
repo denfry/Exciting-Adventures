@@ -1,0 +1,375 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "main"
+	group: ""
+	icon: "minecraft:oak_log"
+	id: "4366304E0EF0E567"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Ты приходишь в себя на чужом берегу. Памяти нет — только ветер и стылая вода."
+				"Поднимись. Свали несколько деревьев: дерево — это первый шаг к жизни."
+			]
+			id: "10A0000000000001"
+			rewards: [{
+				id: "10A0000000000003"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			tasks: [{
+				count: 8L
+				id: "10A0000000000002"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			title: "Холодный берег"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["10A0000000000001"]
+			description: [
+				"Голыми руками здесь не выжить. Сколоти верстак — сердце любого ремесла."
+				"С него начинается всё, что спасёт тебя этой ночью."
+			]
+			id: "10A0000000000004"
+			rewards: [{
+				id: "10A0000000000006"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			tasks: [{
+				id: "10A0000000000005"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			title: "Первый инструмент"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["10A0000000000004"]
+			description: [
+				"Дерево хрупко. Камень — надёжнее."
+				"Сделай каменную кирку, топор и меч: ими ты прокормишься и отобьёшься."
+			]
+			id: "10A0000000000007"
+			rewards: [{
+				id: "10A000000000000B"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			tasks: [
+				{
+					id: "10A0000000000008"
+					item: {
+						Count: 1
+						id: "minecraft:stone_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "10A0000000000009"
+					item: {
+						Count: 1
+						id: "minecraft:stone_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "10A000000000000A"
+					item: {
+						Count: 1
+						id: "minecraft:stone_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Камень и кость"
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["10A0000000000004"]
+			description: [
+				"Пустой желудок убивает медленнее ночи, но так же верно."
+				"Раздобудь первую еду, пока тело ещё держит тебя на ногах."
+			]
+			id: "10A000000000000C"
+			rewards: [{
+				count: 3
+				id: "10A000000000000E"
+				item: "minecraft:cooked_beef"
+				type: "item"
+			}]
+			tasks: [{
+				id: "10A000000000000D"
+				item: "minecraft:bread"
+				type: "item"
+			}]
+			title: "Голод не ждёт"
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"10A0000000000007"
+				"10A000000000000C"
+			]
+			description: [
+				"Солнце тонет в море, и из тьмы выходят мёртвые. Это твоя первая ночь."
+				"Переживи её. Убей мертвецов, что придут на твой огонь."
+			]
+			id: "10A000000000000F"
+			rewards: [{
+				id: "10A0000000000011"
+				type: "xp"
+				xp: 120
+			}]
+			tasks: [{
+				entity: "minecraft:zombie"
+				id: "10A0000000000010"
+				type: "kill"
+				value: 5L
+			}]
+			title: "Первая ночь"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["10A000000000000F"]
+			description: [
+				"Сложи печь из камня. Огонь — это горячая пища, выплавленный металл и тепло во тьме."
+				"Накопи камня и поставь печь."
+			]
+			id: "10A0000000000012"
+			rewards: [{
+				count: 16
+				id: "10A0000000000015"
+				item: "minecraft:torch"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "10A0000000000013"
+					item: "minecraft:furnace"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "10A0000000000014"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+			]
+			title: "Жар очага"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["10A0000000000012"]
+			description: [
+				"Глубже в камне спит железо. Спустись во тьму и вырви его у земли."
+				"Выплавь слитки и выкуй железную кирку — она вскроет недра."
+			]
+			id: "10A0000000000016"
+			rewards: [{
+				id: "10A0000000000019"
+				type: "xp"
+				xp: 200
+			}]
+			tasks: [
+				{
+					count: 6L
+					id: "10A0000000000017"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "10A0000000000018"
+					item: {
+						Count: 1
+						id: "minecraft:iron_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Железная воля"
+			x: 7.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["10A000000000000F"]
+			description: [
+				"Сон на голой земле — приглашение для тварей. Сделай кровать."
+				"Спокойная ночь — единственная роскошь этой земли."
+			]
+			id: "10A000000000001A"
+			rewards: [{
+				id: "10A000000000001C"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			tasks: [{
+				id: "10A000000000001B"
+				item: "minecraft:bed"
+				type: "item"
+			}]
+			title: "Сон без кошмаров"
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["10A000000000001A"]
+			description: [
+				"Этот клочок берега — твой. Заяви на него право, чтобы тьма не разорила его в твоё отсутствие."
+				"Огради и заклейми эту землю как свою."
+			]
+			id: "10A000000000001D"
+			rewards: [{
+				id: "10A000000000001F"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "10A000000000001E"
+				title: "Приватизировать территорию (FTB Chunks)"
+				type: "checkmark"
+			}]
+			title: "Метка дома"
+			x: 7.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["10A0000000000016"]
+			description: [
+				"Мир огромен и враждебен. Создай Путевой камень — и расстояния станут тебе подвластны."
+				"С ним ты вернёшься домой из любой бездны."
+			]
+			id: "10A0000000000020"
+			rewards: [{
+				id: "10A0000000000022"
+				type: "xp"
+				xp: 250
+			}]
+			tasks: [{
+				id: "10A0000000000021"
+				item: {
+					Count: 1
+					id: "waystones:warp_stone"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Камень странствий"
+			x: 9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["10A0000000000016"]
+			description: [
+				"Каменный меч — для слабых. Выкуй железный клинок и подними щит."
+				"С ними ты встретишь следующую ночь не жертвой, а охотником."
+			]
+			id: "10A0000000000023"
+			rewards: [{
+				count: 4
+				id: "10A0000000000026"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "10A0000000000024"
+					item: {
+						Count: 1
+						id: "minecraft:iron_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "10A0000000000025"
+					item: {
+						Count: 1
+						id: "minecraft:shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Острая сталь"
+			x: 9.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["10A000000000001D"]
+			description: [
+				"Ночами тебе снится холод, что не от мороза. Что-то древнее шевелится в глубинах мира."
+				"Запомни это чувство. Скоро оно обретёт имя — Бездна."
+			]
+			id: "10A0000000000027"
+			rewards: [{
+				id: "10A0000000000029"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [{
+				id: "10A0000000000028"
+				title: "Прислушаться к зову глубин"
+				type: "checkmark"
+			}]
+			title: "Тень Бездны"
+			x: 10.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"10A0000000000020"
+				"10A0000000000023"
+				"10A0000000000027"
+			]
+			description: [
+				"У тебя есть кров, сталь, огонь и дорога домой. Берег больше не убьёт тебя."
+				"Это и есть точка опоры — с неё ты столкнёшь мир к правде о себе. Бездна ждёт."
+			]
+			id: "10A00000000000FF"
+			rewards: [{
+				count: 2
+				id: "10A0000000000031"
+				item: "minecraft:golden_apple"
+				type: "item"
+			}]
+			tasks: [{
+				id: "10A0000000000030"
+				title: "Закрепиться в этом мире"
+				type: "checkmark"
+			}]
+			title: "Точка опоры"
+			x: 12.0d
+			y: 0.0d
+		}
+	]
+	title: "Глава I — Пробуждение"
+}

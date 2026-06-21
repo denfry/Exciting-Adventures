@@ -1,0 +1,2 @@
+# Призвать Вестницу Бездны рядом с игроком (один раз)
+execute at @s unless entity @e[tag=npc_herald] run summon minecraft:villager ~ ~ ~1 {NoAI:1b,NoGravity:1b,Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Glowing:1b,CustomNameVisible:1b,CustomName:'{"text":"Вестница Бездны","color":"dark_purple"}',VillagerData:{profession:"minecraft:cleric",level:5,type:"minecraft:swamp"},Offers:{Recipes:[]},Tags:["abyss_npc","npc_herald"]}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/clock_display_sleep_off",
+  "textures": {
+    "layer0": "minecraft:item/clock_display_sleep_on"
+  }
+}

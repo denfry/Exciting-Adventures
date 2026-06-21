@@ -1,0 +1,17 @@
+{
+  "mod_enabled": "Yes",
+  "third_person_enabled": "No",
+  "high_fov_enabled": "No",
+  "pumpkin_enabled": "No",
+  "disable_riptide_anim": "No",
+  "render_titles": "Yes",
+  "render_values": "No",
+  "render_airspeed": "Yes",
+  "render_horizon": "Yes",
+  "render_durability": "Yes",
+  "render_altitude": "Yes",
+  "render_vertical": "Yes",
+  "render_compass": "Yes",
+  "compass_default_x": 0,
+  "default_fov": 32
+}

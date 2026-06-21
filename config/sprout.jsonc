@@ -1,0 +1,13 @@
+{
+    "World Generation": {
+        "Sprouts": {
+            // Weather you want sprouts or not.
+            "enabled": true,
+            /*
+             * The frequency that sprouts will spawn. Note: 32 is vanilla grass.
+             * Type: Integer
+             */
+            "frequency": 32
+        }
+    }
+}

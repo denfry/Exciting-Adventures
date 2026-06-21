@@ -1,0 +1,309 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "bosses"
+	group: ""
+	icon: "minecraft:nether_star"
+	id: "40A0000000000000"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["30A00000000000FF"]
+			description: [
+				"Лёд под ногами стонет, а вода внизу — чёрная и живая."
+				"Бездна больше не спит. Пора спуститься туда, где её слуги ждут."
+				"Подготовь оружие и доспех — назад дороги не будет."
+			]
+			id: "40A0000000000001"
+			rewards: [{
+				id: "40A0000000000003"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "40A0000000000002"
+				title: "Шагнуть в затопленные глубины"
+				type: "checkmark"
+			}]
+			title: "Зов глубин"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["40A0000000000001"]
+			description: [
+				"В чёрной воде мерцает обманчивый огонёк."
+				"Это удильщик — он манит добычу прямо в свою пасть."
+				"Убей трёх, прежде чем они сделают это с тобой."
+			]
+			id: "40A0000000000004"
+			rewards: [{
+				count: 6
+				id: "40A0000000000006"
+				item: "minecraft:cooked_cod"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "aquamirae:anglerfish"
+				id: "40A0000000000005"
+				type: "kill"
+				value: 3L
+			}]
+			title: "Свет в темноте"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["40A0000000000001"]
+			description: [
+				"Что-то цепляется за ноги в мутной воде."
+				"Зев Бездны — безглазая тварь, что жрёт всё живое."
+				"Прикончи пятерых, чтобы расчистить путь."
+			]
+			id: "40A0000000000007"
+			rewards: [{
+				id: "40A0000000000009"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				entity: "aquamirae:maw"
+				id: "40A0000000000008"
+				type: "kill"
+				value: 5L
+			}]
+			title: "Голодная пасть"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"40A0000000000004"
+				"40A0000000000007"
+			]
+			description: [
+				"Из тумана выплывает призрак затонувшего корабля."
+				"Капитан Корнелия не упокоилась — она командует мёртвым флотом."
+				"Сломи её власть над глубинами."
+			]
+			id: "40A000000000000A"
+			rewards: [{
+				count: 4
+				id: "40A000000000000C"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "aquamirae:captain_cornelia"
+				id: "40A000000000000B"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Капитан Корнелия"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["40A000000000000A"]
+			description: [
+				"В сердце ледяного лабиринта дышит древняя тварь."
+				"Мать Лабиринта плела эти коридоры тысячи лет."
+				"Убей её — и стены Бездны дрогнут."
+			]
+			id: "40A000000000000D"
+			rewards: [{
+				id: "40A000000000000F"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "aquamirae:maze_mother"
+				id: "40A000000000000E"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Мать Лабиринта"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["40A000000000000D"]
+			description: [
+				"Иссохшие воины Нижнего мира хранят то, что тебе нужно."
+				"Сруби три черепа иссушённых скелетов."
+				"Из них родится буря."
+			]
+			id: "40A0000000000010"
+			rewards: [{
+				count: 4
+				id: "40A0000000000012"
+				item: "minecraft:soul_sand"
+				type: "item"
+			}]
+			tasks: [{
+				count: 3L
+				id: "40A0000000000011"
+				item: "minecraft:wither_skeleton_skull"
+				type: "item"
+			}]
+			title: "Три черепа"
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["40A0000000000010"]
+			description: [
+				"Три черепа на песке душ. Один взмах — и тьма обретёт плоть."
+				"Иссушитель усилен сверх меры. Он сметёт всё на своём пути."
+				"Убей его, или он убьёт тебя."
+			]
+			id: "40A0000000000013"
+			rewards: [{
+				id: "40A0000000000015"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "minecraft:wither"
+				id: "40A0000000000014"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Призыв бури"
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["40A000000000000D"]
+			description: [
+				"В глубочайших пещерах слепое чудовище слышит каждый твой шаг."
+				"Хранитель не знает пощады. Один удар — и тебя нет."
+				"Сразись с ним и забери осколок эха."
+			]
+			id: "40A0000000000016"
+			rewards: [{
+				id: "40A0000000000018"
+				item: "minecraft:totem_of_undying"
+				type: "item"
+			}]
+			tasks: [{
+				id: "40A0000000000017"
+				item: "minecraft:echo_shard"
+				type: "item"
+			}]
+			title: "Страж тьмы"
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["40A0000000000016"]
+			description: [
+				"В затопленном храме покоится исполин с одним глазом."
+				"Старший страж насылает проклятие усталости на всех, кто посмеет приблизиться."
+				"Убей его и докажи, что глубины тебе подвластны."
+			]
+			id: "40A0000000000019"
+			rewards: [{
+				count: 8
+				id: "40A000000000001B"
+				item: "minecraft:prismarine_shard"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "minecraft:elder_guardian"
+				id: "40A000000000001A"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Древний страж"
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["40A0000000000013"]
+			description: [
+				"Звезда тьмы пульсирует в твоих ладонях."
+				"Из неё и древних сплавов куётся божественная броня."
+				"Облачись в неё — впереди последний враг."
+			]
+			id: "40A000000000001C"
+			rewards: [{
+				count: 2
+				id: "40A000000000001E"
+				item: "minecraft:enchanted_golden_apple"
+				type: "item"
+			}]
+			tasks: [{
+				id: "40A000000000001D"
+				item: {
+					Count: 1
+					id: "immersive_armors:divine_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Дар древних"
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"40A0000000000019"
+				"40A000000000001C"
+			]
+			description: [
+				"Сквозь пустоту между мирами лежит твой путь."
+				"Дракон Края правит небом конца света."
+				"Сорви его власть — и Бездна лишится последнего союзника."
+			]
+			id: "40A000000000001F"
+			rewards: [{
+				id: "40A0000000000021"
+				item: {
+					Count: 1
+					id: "minecraft:elytra"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				entity: "minecraft:ender_dragon"
+				id: "40A0000000000020"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Крылатая погибель"
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["40A000000000001F"]
+			description: [
+				"Боссы пали. Глубины, пещеры, Нижний мир и Край склонились пред тобой."
+				"Ты больше не безымянный, что очнулся на холодном берегу."
+				"Ты — Гроза глубин. Но Бездна всё ещё ждёт. Финальная схватка близка."
+			]
+			id: "40A00000000000FF"
+			rewards: [{
+				count: 2
+				id: "40A0000000000023"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "40A0000000000022"
+				title: "Стать Сокрушителем Бездны"
+				type: "checkmark"
+			}]
+			title: "Гроза глубин"
+			x: 12.0d
+			y: 0.0d
+		}
+	]
+	title: "Глава IV — Сокрушители Бездны"
+}

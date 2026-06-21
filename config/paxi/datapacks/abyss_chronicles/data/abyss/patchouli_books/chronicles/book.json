@@ -1,0 +1,11 @@
+{
+  "name": "Хроники Бездны",
+  "subtitle": "Летопись пробуждения",
+  "landing_text": "Холодный берег помнит тебя. Открой страницы — и вспомни, кто ты.$(br2)Эта книга растёт вместе с твоим путём.",
+  "version": 1,
+  "creative_tab": "minecraft:tools_and_utilities",
+  "use_resource_pack": true,
+  "i18n": false,
+  "show_progress": true,
+  "pause_game": false
+}

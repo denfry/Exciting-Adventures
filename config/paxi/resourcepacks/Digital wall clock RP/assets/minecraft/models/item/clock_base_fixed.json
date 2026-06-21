@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:item/clock_base_inventory",
+	"display": {
+		"fixed": {
+			"rotation": [0, 180, 0],
+			"translation": [0, 0, -1],
+			"scale": [1.5, 1.5, 2]
+		}
+	}
+}

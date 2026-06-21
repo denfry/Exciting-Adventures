@@ -1,0 +1,52 @@
+{
+  "cache": {
+    "rpg_series:tier_4_weapons": [
+      "wizards:staff_ruby_fire",
+      "wizards:staff_crystal_arcane",
+      "wizards:staff_smaragdant_frost"
+    ],
+    "rpg_series:tier_1_armors": [
+      "wizards:wizard_robe_chest",
+      "wizards:wizard_robe_feet",
+      "wizards:wizard_robe_head",
+      "wizards:wizard_robe_legs"
+    ],
+    "rpg_series:tier_2_armors": [
+      "wizards:arcane_robe_chest",
+      "wizards:arcane_robe_feet",
+      "wizards:arcane_robe_head",
+      "wizards:arcane_robe_legs",
+      "wizards:fire_robe_chest",
+      "wizards:fire_robe_feet",
+      "wizards:fire_robe_head",
+      "wizards:fire_robe_legs",
+      "wizards:frost_robe_chest",
+      "wizards:frost_robe_feet",
+      "wizards:frost_robe_head",
+      "wizards:frost_robe_legs"
+    ],
+    "rpg_series:tier_3_armors": [],
+    "rpg_series:tier_0_accessories": [],
+    "rpg_series:tier_1_accessories": [],
+    "rpg_series:tier_3_weapons": [
+      "wizards:staff_netherite_arcane",
+      "wizards:staff_netherite_fire",
+      "wizards:staff_netherite_frost"
+    ],
+    "rpg_series:tier_2_accessories": [],
+    "rpg_series:tier_3_accessories": [],
+    "rpg_series:tier_1_weapons": [
+      "wizards:staff_wizard"
+    ],
+    "rpg_series:golden_weapons": [],
+    "rpg_series:tier_2_weapons": [
+      "wizards:staff_arcane",
+      "wizards:staff_fire",
+      "wizards:staff_frost"
+    ],
+    "rpg_series:tier_4_accessories": [],
+    "rpg_series:tier_0_weapons": [
+      "wizards:wand_novice"
+    ]
+  }
+}

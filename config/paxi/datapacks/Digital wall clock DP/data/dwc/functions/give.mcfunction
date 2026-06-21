@@ -1,0 +1,1 @@
+give @s item_frame{EntityTag:{Tags:["clock","base"],Invisible:1b,Item:{id:"minecraft:knowledge_book",Count:1b,tag:{CustomModelData:60}}},CustomModelData:60,display:{Name:'[{"translate":"item.minecraft.digital_wall_clock","italic":false}]'}}
