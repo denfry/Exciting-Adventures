@@ -19,7 +19,7 @@
 <p align="center">
   <a href="https://www.curseforge.com/minecraft/modpacks/exciting-adventures"><img alt="CurseForge" src="https://img.shields.io/curseforge/dt/601606?style=flat-square&logo=curseforge&label=CurseForge&color=F16436"></a>
   <a href="https://modrinth.com/modpack/exciting-adventures"><img alt="Modrinth" src="https://img.shields.io/modrinth/dt/exciting-adventures?style=flat-square&logo=modrinth&label=Modrinth&color=1bd96a"></a>
-  <a href="https://discord.gg/c57BX45vkN"><img alt="Discord" src="https://img.shields.io/badge/Discord-Join-5865F2?style=flat-square&logo=discord&logoColor=white"></a>
+  <a href="https://discord.gg/mVZcNUAGZt"><img alt="Discord" src="https://img.shields.io/badge/Discord-Join-5865F2?style=flat-square&logo=discord&logoColor=white"></a>
 </p>
 
 ---
@@ -91,7 +91,7 @@ A taste of the 460+ mods, by theme:
 
 - 🟠 **CurseForge:** https://www.curseforge.com/minecraft/modpacks/exciting-adventures
 - 🟢 **Modrinth:** https://modrinth.com/modpack/exciting-adventures
-- 💬 **Discord:** https://discord.gg/c57BX45vkN
+- 💬 **Discord:** https://discord.gg/mVZcNUAGZt
 - 📚 **Wiki:** [Documentation & guides](../../wiki)
 - 🐛 **Issues:** [Report a bug](../../issues/new/choose)
 
